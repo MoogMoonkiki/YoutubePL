@@ -50,5 +50,6 @@ At the end run your ypl instances:
 More info
 -----------------
 
-You can find more info at http://moog.moonkiki.com 
+You can find more info at <a href="http://moog.moonkiki.com">http://moog.moonkiki.com</a>
+ <br/>
 Demo is here: <a href="http://moog.moonkiki.com/MooG/plugin/YoutubePL/youtubePLDemo.html">demo youtubepl</a>
