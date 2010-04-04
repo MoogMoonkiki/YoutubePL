@@ -3,6 +3,29 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <title>Mootools - YouTube Player API Sample</title>
+        <meta name="keywords" content="google youtube api,mootools,plugin," />
+        <meta name="description" content="Your mug of MooTools &amp; Google API" />
+        <meta name="created" content="March 2008" />
+        <meta name="coder" content="Richie K" />
+        <link rel="stylesheet" href="http://moog.moonkiki.com/wp-content/themes/zoxengen/style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="http://moog.moonkiki.com/wp-content/themes/zoxengen/fonts.php" type="text/css" />
+        <link rel="stylesheet" href="http://moog.moonkiki.com/wp-content/themes/zoxengen/layout.css" type="text/css" />
+        <link rel="stylesheet" href="http://moog.moonkiki.com/wp-content/themes/zoxengen/jd.gallery.css" type="text/css" />
+        <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://moog.moonkiki.com/feed/" />
+        <link rel="alternate" type="text/xml" title="RSS .92" href="http://moog.moonkiki.com/feed/rss/" />
+        <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://moog.moonkiki.com/feed/atom/" />
+        <link rel="pingback" href="http://moog.moonkiki.com/xmlrpc.php" />
+        <link rel="icon" href="http://moog.moonkiki.com/wp-content/themes/zoxengen/favicon.ico" type="images/x-icon" />
+        <meta name="generator" content="WordPress 2.9.2" />
+        <link rel='archives' title='April 2010' href='http://moog.moonkiki.com/2010/04/' />
+        <link rel='archives' title='March 2010' href='http://moog.moonkiki.com/2010/03/' />
+        <link rel='stylesheet' id='codecolorer-css' href='http://moog.moonkiki.com/wp-content/plugins/codecolorer/codecolorer.css?ver=0.9.8' type='text/css' media='screen' />
+        <script type='text/javascript' src='http://moog.moonkiki.com/?retweetjs&#038;ver=2.9.2'>
+        </script>
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://moog.moonkiki.com/xmlrpc.php?rsd" />
+        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://moog.moonkiki.com/wp-includes/wlwmanifest.xml" />
+        <link rel='index' title='Take a MooG of MoonKiKi' href='http://moog.moonkiki.com' />
+        <meta name="generator" content="WordPress 2.9.2" />
         <script src="http://www.google.com/jsapi" type="text/javascript">
         </script>
         <script>
@@ -12,64 +35,118 @@
         </script>
         <script src="YoutubePL.js" type="text/javascript">
         </script>
-<style>
-	html, body {border: 0; margin: 10px; padding: 0;}
-
-body {
-  	font: 85%/0.9 Trebuchet MS,arial, helvetica, sans-serif;
-	background: #dedede;
-} 
-
-</style>
     </head>
     <body style="font-family: Arial;border: 0 none;">
-    <div>
-        <h1>Demo 1: charge ypl into inline code</h1>
-        <pre>            var ypl = new YoutubePL({select:'videoSelection',videoContainer:'videoDiv'});
+        <div id="wrapper">
+            <div id="container">
+                <div id="header">
+                    <a href="http://moog.moonkiki.com"><img src="http://moog.moonkiki.com/wp-content/uploads/2010/03/moog1.png" alt="home" style="margin:5px;width:80px;float:left;"/></a>
+                    <div id="left-header">
+                        <h1><a href="http://moog.moonkiki.com">Take a MooG of MoonKiKi</a></h1>
+                        <p>
+                            Your mug of MooTools &amp; Google API
+                        </p>
+                    </div>
+                    <div id="right-header">
+                        <form method="get" action="/" id="searchform">
+                            <input name="s" type="text" class="intext" value="Search Keyword" onfocus="if (this.value == 'Search Keyword') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search Keyword';}" size="10" tabindex="1" /><input name="search" type="image" src="http://moog.moonkiki.com/wp-content/themes/zoxengen/images/search.png" alt="search" class="inbutton"/>
+                        </form>
+                    </div>
+                </div>
+                <div id="navigation">
+                    <div id="last-updates">
+                        <div class="lupdate">
+                            Last update in Sunday, April 4th 2010
+                        </div>
+                        <div class="lsubscribes">
+                            <a href="http://moog.moonkiki.com/feed/">Stay update with this site articles</a>
+                        </div>
+                    </div>
+                    <div id="nav">
+                        <ul class="pg-nav">
+                            <li id="home">
+                                <a href="http://moog.moonkiki.com" title="Home">Home</a>
+                            </li>
+                            <li class="page_item page-item-2">
+                                <a href="http://moog.moonkiki.com/about/" title="About">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="sub-navs">
+                        <ul id="adstop" class="sub-nav">
+                            <li>
+                                <!-- g code -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content">
+                    <div>
+                        <h1>Demo 1: charge ypl into inline code</h1>
+                        <pre>            var ypl = new YoutubePL({select:'videoSelection',videoContainer:'videoDiv'});
 					</pre>
-    </div>
-    <div id="videoDiv" style="float:left">
-        Loading...
-    </div>
-    <div id="videoControls" style="margin:2px">
-        <p>
-            Select a video to load:
-        </p>
-        <select id="videoSelection">
-            <option value="ylLzyHk54Z0" selected>YouTube API Overview</option>
-            <option value="muLIPWjks_M">Ninja Cat</option>
-            <option value="GMUlhuTkM3w">Beatboxing Flute</option>
-        </select>
-    </div>
-	<div style="clear:both">&nbsp;<div>
-    <hr/>
-    <div>
-        <h1>Demo 2: charge ypl using only a div</h1>
-    </div>
-    <pre>            var ypl2 = new YoutubePL({videoContainer:'videoDiv2', videos: [
+                    </div>
+                    <div id="videoDiv" style="float:left">
+                        Loading...
+                    </div>
+                    <div id="videoControls" style="margin:2px">
+                        <p>
+                            Select a video to load:
+                        </p>
+                        <select id="videoSelection">
+                            <option value="ylLzyHk54Z0" selected>YouTube API Overview</option>
+                            <option value="muLIPWjks_M">Ninja Cat</option>
+                            <option value="GMUlhuTkM3w">Beatboxing Flute</option>
+                        </select>
+                    </div>
+                    <div style="clear:both">
+                        &nbsp;
+                        <div>
+                            <hr/>
+                            <div>
+                                <h1>Demo 2: charge ypl using only a div</h1>
+                            </div>
+                            <pre>            var ypl2 = new YoutubePL({videoContainer:'videoDiv2', videos: [
 			'2TaclzGjmm8','vorxYDEtuRY','9mO5cKO7toE'
 			]});
 </pre>
-    <div id="videoDiv2">
-        Loading...
-    </div>
-    </div>
-    <script type="text/javascript">
-        
-        var ypl = new YoutubePL({
-            select: 'videoSelection',
-            videoContainer: 'videoDiv'
-        });
-        var ypl2 = new YoutubePL({
-            videoContainer: 'videoDiv2',
-            videos: ['2TaclzGjmm8', 'vorxYDEtuRY', '9mO5cKO7toE']
-        });
-        
-        var runDemo = function(){
-            ypl.run();
-            ypl2.run();
-        }
-        google.setOnLoadCallback(runDemo());
-    </script>
-</body>
+                            <div id="videoDiv2">
+                                Loading...
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            
+                            var ypl = new YoutubePL({
+                                select: 'videoSelection',
+                                videoContainer: 'videoDiv'
+                            });
+                            var ypl2 = new YoutubePL({
+                                videoContainer: 'videoDiv2',
+                                videos: ['2TaclzGjmm8', 'vorxYDEtuRY', '9mO5cKO7toE']
+                            });
+                            
+                            var runDemo = function(){
+                                ypl.run();
+                                ypl2.run();
+                            }
+                            google.setOnLoadCallback(runDemo());
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-15527119-1");
+                pageTracker._setDomainName(".moonkiki.com");
+                pageTracker._trackPageview();
+            } 
+            catch (err) {
+            }
+        </script>
+    </body>
 </html>
