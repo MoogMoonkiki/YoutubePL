@@ -1,19 +1,23 @@
 /*
- ---
- description: A plugin to build a video Playlist using Mootools and Google API.
- 
- license: MIT-style
+---
+description: A plugin to build a video Playlist using Mootools and Google API.
 
- authors:
- - Nunzio Fiore
- 
- requires:
- - Mootools 1.2.4
- - Mootools more Elements.from function.
- 
- provides:
- -YoutubePL
- 
+license: MIT-style
+
+authors:
+- Nunzio Fiore (http://moog.moonkiki.com)
+
+requires:
+- Element
+- Elements.from
+- Element.Style
+- Element.Dimenstions
+- String
+- Array
+
+provides: [YoutubePL]
+
+...
 */
 var YoutubePL = new Class({
 
