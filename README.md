@@ -5,7 +5,7 @@ YoutubePL
 
 Include a script containing the class YoutubePL written using Mootools and Google API and you will bind your combobox and a div to the plugin.
 On the same page you can create multiple pleaylist.  
-
+Demo is here: <a href="http://moog.moonkiki.com/MooG/plugin/YoutubePL/youtubePLDemo.html">Demo 1 e 2 of YoutubePL</a>
 
 How to use
 ----------
@@ -51,5 +51,5 @@ More info
 -----------------
 
 You can find more info at <a href="http://moog.moonkiki.com">http://moog.moonkiki.com</a>
- <br/>
+
 Demo is here: <a href="http://moog.moonkiki.com/MooG/plugin/YoutubePL/youtubePLDemo.html">demo youtubepl</a>
